@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Cookie Company | Delicious Cookies</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+
+        .left-nav , .right-nav{
+            display: flex;
+        }
+
+        h1{
+            color: powderblue;
+            font-family: fantasy;
+            font-size: 2rem;
+            font-weight: 500;
+            margin-right: 2rem;
+        }
+
+        nav, nav > ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        #hero{
+            background-image: url('https://t4.ftcdn.net/jpg/02/79/77/57/360_F_279775707_spfAKjZcHlUPiBbtguvsppkbYXi6pWbX.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: crimson;
+        }
+
+        #hero > h2{
+            font-size: 3rem;
+        }
+
+        .recipe-cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            padding-top: 2rem;
+        }
+        .recipe{
+            width: 20%;
+            height: 250px;
+            border: 3px solid crimson;
+        }
+        .recipe img{
+            width: 100%;
+        }
+        
+        footer{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            font-family: sans-serif ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-nav">
+            <h1>KCC</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Cookies</li>
+                    <li>Recipes</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-nav">
+            <input type="text" name="recipe-search" id="recipe-search" placeholder="Search Recipe">
+            <button>-></button>
+            <button>SignIn</button>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Kevin Cookie Company</h2>
+            <p>Delicious And Sweet</p>
+        </section>
+        <section id="cards">
+            <h2 style="text-align: center; font-size: 2rem;">Our Recipes</h2>
+            <div class="recipe-cards">
+                <div class="recipe">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/eggless-chocolate-chip-cookies-recipe.webp" alt="Cookie Image">
+                </div>
+                <div class="recipe">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/eggless-chocolate-chip-cookies-recipe.webp" alt="Cookie Image">
+                </div>
+                <div class="recipe">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/eggless-chocolate-chip-cookies-recipe.webp" alt="Cookie Image">
+                </div>
+                <div class="recipe">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2018/09/eggless-chocolate-chip-cookies-recipe.webp" alt="Cookie Image">
+                    <div class="desc">Choco Brownie Cookie</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Copyright 2026 Kevin Cookie company
+    </footer>
+</body>
+</html>
